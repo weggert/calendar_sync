@@ -47,10 +47,13 @@ At this point you should have a copy of the events from the source calendar in t
 ### Schedule the Automator script
 The best way to schedule the sync is via cron.
 Run 'crontab -e'
-Add an entry such as `30 6,10,16,20 * * * automator /Users/Wally/scripts/calendar_sync.workflow`
+Add an entry such as:
+
+```30 6,10,16,20 * * * automator /Users/Wally/scripts/calendar_sync.workflow```
+
 Save the changes.
 The first time the sync runs, you will need to grant access to your calendar to `cron`.
 
 ## Usage
-That's about it.  If everything is working as expected, there will always be 'n' days of calendar events synchronized
+That's about it.  If everything is working as expected, there will always be `n` days of calendar events synchronized
 from the source calendar to the destination calendar.  Enjoy.
