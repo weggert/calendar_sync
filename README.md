@@ -27,6 +27,8 @@ in the calendar with that name will be deleted.  There is no warning, and no way
 * Adjust the source calendar name to the calendar you want to sync from.
 * Choose the timeframe for events to sync.
 * Adjust the 'Run shell script' command to point to the location of the Python script, and to write the log to a desired location.
+* Choose 'File->Convert To...' in Automator.  Choose 'Calendar Alarm'.
+* Choose 'File->Save...' in Automator.  Enter 'Calendar Sync' as the name.
 * When you save the script, Automator will ask for access to your Calendar.  A new 'Automator' calendar will be created in the 'On My Mac' section of Calendar.  This will be used to automate running the script.  See 'Schedule the Automator script' below.
 
 ### Calendar
@@ -39,13 +41,6 @@ At this point you should have a copy of the events from the source calendar in t
 ### Schedule the Automator script
 A new 'Automator' calendar should have been created in the 'On My Mac' Calendar section when you saved the Automator script.  There should also be a single event called 'Calendar Sync'.
 That event should have an 'Open File' alert that will open the Calendar Sync automator script.
-
-If the Automator calendar does not already exist...
-
-* Create a new calendar called 'Automator' in 'On My Mac'.
-* Add an event and name it as you wish.
-* Set the alert to 'Open File', choose 'Other...', and choose the Automator script.
-* Adjust the timing to 'At time of event'.
 
 Adjust the Repeat settings for the calendar event to schedule the synchronizations.  The event can be copied to have it run multiple times a day.
 
